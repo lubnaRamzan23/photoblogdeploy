@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav-Bar practice</title>
+    <style>
+
+
+        .header{
+            background-color: #f1f1f1;
+            line-height: 400px;
+            height: 400px;    
+            width: 100%;
+            background-image : url("pexels-tetyana-kovyrina-1848662.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          
+            
+        }
+
+            .header h1{
+                text-align: center;
+                font-weight: bolder;
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 3uv;
+            }
+         /*navigation*/
+         
+     ul.nav{
+           
+            list-style-type:none;
+            background-color: black;
+            position: fixed;
+            border: 1px solid #555;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            
+           
+            
+            
+         }
+    li{
+            float: left;
+            border-right: 1px solid#333;
+         }
+
+          li a, .navright a{
+            display: block;
+            padding: 12px 14px;
+            text-decoration: none;
+            text-align: center;
+            color: #ffffff;
+            margin: 0;
+          
+        }
+
+         li.navright {
+            float: right;
+         
+        }
+        li:last-child{
+            border-right: none;
+        }
+
+
+        li a:hover:not(.active){
+            background-color: #555;
+        }
+   
+        .active {
+        background-color: rgb(7, 44, 7);
+      }
+     
+    
+@media screen and (max-width: 500px) {
+  ul.nav li.navright, 
+  ul.nav li {float: none;
+text-align: center;
+}
+}
+    </style>
+
+</head>
+<body>
+  
+    <div class="header">
+         <h1>This is a simple web page.</h1>
+    </div>
+  <div  >
+    <ul class="nav" style="width: 98.7%;">
+        <li ><a class="active" href="#home">Home</a></li>
+        <li><a href="#content">Content</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="navright"><a href="#about">About us</a></li>
+    </ul>
+  
+</div>
+
+
+    
+</body>
+</html>
